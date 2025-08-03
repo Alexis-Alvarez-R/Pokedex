@@ -25,7 +25,7 @@ export const getPokemons = async (page: number, limit: number): Promise<Pokemon[
 };
 
 export const getTotalPokemonsByType = async (type: string): Promise<number> => {
-  const res = await fetch(`${BASE_URL}/type/${type}`);
+  const res = await fetch(`https://pokeapi.co/api/v2/type/${type}`);
   if (!res.ok) return 0;
 
   const data = await res.json();

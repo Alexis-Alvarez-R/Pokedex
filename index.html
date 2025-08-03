@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/css/style.css" />
+    <link rel="stylesheet" href="./src/css/types.css" />
+    <title>PokeApi</title>
+  </head>
+  <body>
+    <header class="header">
+      <img src="./src/assets/img/logoPokedex.png" alt="logo de la pokedex" class="logo" />
+      <nav class="nav">
+        <ul class="list__buttons">
+          <li class="button all" id="all">all</li>
+          <li class="button bug" id="bug">bug</li>
+          <li class="button dragon" id="dragon">dragon</li>
+          <li class="button dark" id="dark">dark</li>
+          <li class="button electric" id="electric">electric</li>
+          <li class="button fighting" id="fighting">fighting</li>
+          <li class="button fire" id="fire">fire</li>
+          <li class="button flying" id="flying">flying</li>
+          <li class="button fairy" id="fairy">fairy</li>
+          <li class="button ghost" id="ghost">ghost</li>
+          <li class="button grass" id="grass">grass</li>
+          <li class="button ground" id="ground">ground</li>
+          <li class="button ice" id="ice">ice</li>
+          <li class="button normal" id="normal">normal</li>
+          <li class="button poison" id="poison">poison</li>
+          <li class="button psychic" id="psychic">psychic</li>
+          <li class="button rock" id="rock">rock</li>
+          <li class="button steel" id="steel">steel</li>
+          <li class="button water" id="water">water</li>
+        </ul>
+
+        <div class="container__search">
+          <input type="text" placeholder="Search" id="search" />
+          <div class="search__button">
+            <img src="./src/assets/icons/search.svg" alt="" class="icon__search" />
+          </div>
+        </div>
+      </nav>
+    </header>
+    <div class="container__pokemon"></div>
+
+    <div class="container__pagination"></div>
+
+    <template id="template__card">
+      <div class="card__pokemon">
+        <div class="background__card">
+          <img src="./src/assets/img/bulbasaur.png" alt="pokemon" class="img__card" />
+        </div>
+
+        <div class="data__card">
+          <div class="top__data">
+            <p class="id">N° 001</p>
+            <p class="weight stats">2100 kg</p>
+            <p class="height stats">39 M</p>
+          </div>
+          <p class="name">bulbasaur</p>
+          <div class="types">
+            <p class="type primary__type grass">planta</p>
+            <p class="type secundary__type poison">veneno</p>
+          </div>
+        </div>
+      </div>
+    </template>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
